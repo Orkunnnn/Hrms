@@ -3,7 +3,6 @@ package kodlamaio.hrms.business.concretes;
 import kodlamaio.hrms.business.abstracts.EmployeeVerificationService;
 import kodlamaio.hrms.business.abstracts.EmployerService;
 import kodlamaio.hrms.business.adapters.MailServiceAdapter;
-import kodlamaio.hrms.core.utilities.helpers.StringHelper;
 import kodlamaio.hrms.core.utilities.results.*;
 import kodlamaio.hrms.dataAccess.abstracts.EmployerDao;
 import kodlamaio.hrms.entities.concretes.Employer;
