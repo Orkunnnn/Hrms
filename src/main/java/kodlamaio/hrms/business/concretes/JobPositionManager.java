@@ -34,7 +34,8 @@ public class JobPositionManager implements JobPositionService {
     }
 
     private boolean checkIfJobPositionExists(String positionName) {
-        return jobPositionDao.findByPositionName(positionName).getPositionName() != null;
+        System.out.println("*********"+jobPositionDao.findByPositionName(positionName));
+        return jobPositionDao.findByPositionName(positionName) != null;
     }
 
 }
