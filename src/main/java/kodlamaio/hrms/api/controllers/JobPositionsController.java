@@ -17,6 +17,7 @@ public class JobPositionsController {
 
     private JobPositionService jobPositionService;
 
+
     @Autowired
     public JobPositionsController(JobPositionService jobPositionService) {
         this.jobPositionService = jobPositionService;

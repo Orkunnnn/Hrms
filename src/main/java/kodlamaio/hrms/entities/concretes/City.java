@@ -13,18 +13,18 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "job_positions")
+@Table(name = "cities")
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler", "jobAdvertisements"})
-public class JobPosition {
+public class City {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int id;
 
-    @Column(name = "position_name", unique = true)
-    private String positionName;
+    @Column(name = "name")
+    private String name;
 
-    @OneToMany(mappedBy = "jobPosition")
+    @OneToMany(mappedBy = "city")
     @JsonIgnore
     private List<JobAdvertisement> jobAdvertisements;
 }
